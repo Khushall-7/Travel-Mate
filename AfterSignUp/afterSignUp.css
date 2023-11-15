@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  /* background: #f6f6f6; */
+  width: auto;
+  height:750px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: linear-gradient(#add4d4, #b8ada6);
+
+}
+
+/* p1 {
+  padding: 0px 20px 20px;
+} */
+.content {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.box{
+  width: 450px;
+  height: 200px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius:7px;
+  box-shadow: 1px 2px 4px #9e9e9e;
+}
+
+.box p{
+  text-align: center;
+}
+.box .heading{
+  background: #add4d4;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: :center;
+  font-family: "Rubik";
+}
+
+.box .message{
+  text-align: center;
+  line-height: 5px;
+}
+
+.box .message i{
+  font-size: 40px;
+}
+
+.box .message p{
+  font-size: 15px;
+}
+
+.box .message input[type=button] {
+  border-radius: 20px;
+  background-color: #ebded4;
+  width: 20%;
+  height: 30px;
+  margin-left: auto;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}

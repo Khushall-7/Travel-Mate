@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+#TopMenu {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #b8ada6;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#TopMenu:hover {
+  background-color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+      * {
+        font-family: 'Jost', sans-serif;
+        list-style: none;
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        width: auto;
+        margin: 0 auto;
+        background: #f7f6f6;
+        box-sizing: border-box;
+        overflow: auto;
+      }
+
+      header {
+  background-color: #ebded4;
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nav_bar {
+  margin: 0 auto;
+  width: 860px;
+  padding: 0px 20px 0px 20px;
+  height: 64px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.nav_bar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.nav_bar ul li {
+  margin-top: 8.8vh;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav_bar ul li a {
+  text-decoration: none;
+  color: black;
+  background: #fff;
+  border-bottom: none;
+  padding: 22px 20px 20px 20px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topLeft: 10px;
+  -moz-border-radius-topRight: 10px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-bottom: none;
+  height: 2px;
+}
+
+.nav_bar ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #add4d4;
+  -moz-transition: background-color 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  -ms-transition: background-color 200ms;
+}
+
+.nav_bar ul li a#onlink {
+  background: #add4d4;
+  color: #fff;
+  border-bottom: none;
+}
+
+.nav_bar ul li a#onlink:hover {
+  color: #000000;
+}
+
+nav {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 20px;
+  transition: 0.5s;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+
+.title {
+  float: above;
+  text-align: center;
+  line-height: 0.5;
+  padding-top: 30px;
+}
+
+.title p {
+  letter-spacing: 5px;
+}
+
+.title .logo {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  /* margin: 0 auto; */
+  /* padding-left: 25%; */
+  justify-content: center;
+  align-items: center;
+}
+
+#proname {
+  font-family: 'Schoolbell', cursive;
+  font-size: 5em;
+  letter-spacing: 10px;
+}
+
+#prename {
+  font-size: 3em;
+}
+
+footer {
+  height: 80px;
+  background-color: #ebded4;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .footer {
+    text-align: center;
+}
+
+footer .footer li {
+  list-style: none;
+  margin: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+  /* padding: 20px 10px; */
+  transition: .5s;
+}
+
+footer .footer li a {
+  color: #000;
+}
+
+

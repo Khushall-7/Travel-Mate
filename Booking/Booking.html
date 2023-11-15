@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="icon" href="./img/logo.jpg">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mlEwU6UdnSelbHQkxZcxfldDtb2zsgE&callback=initMap" defer>
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="tab">
+      <nav>
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <li style="margin-right: 30px;"><a href="../">Homepage</a></li>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <li style="margin-right: 50px;"><a href="../Login/login.html">Login</a></li>
+      </nav>
+    </div>
+
+    <div class="nav_bar">
+      <ul>
+        <li><a href="../Registration/registration.html">Registration</a></li>
+        <li><a href="../Event/eventpage.html">Event</a></li>
+        <li><a href="../Booking/Booking.html" id="onlink">Booking</a></li>
+        <li><a href="../Contact/Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+
+  </header>
+
+  <button onclick="topFunction()" id="TopMenu" title="Go to top"><i class="fas fa-arrow-up"></i> Top</button>
+
+  <div class="content">
+
+
+
+<div class="title"><br>
+
+  <div class="logo">
+    <img src="./img/logo2.png" alt="travelbuddy" width="100px" height="100px">
+    <h1 id="proname">TRAVELBUDDY</h1><br>
+  </div><br>
+
+  <br><br><br><br><br>
+
+</div><br>
+
+
+
+
+    <div class="findlocation">
+      <div class="section-title">
+        <ul>
+          <li>
+            <p style="font-weight: bold;">DETAILS</p>
+          </li>
+        </ul>
+      </div>
+      <div class="find-location-box">
+        <div class="fl-left">
+
+          <!--<input type="submit" value="Submit">-->
+
+
+          <label for="Country" style="color:white; padding-left: 5px;"><strong>COUNTRY </strong></label>
+          <select name="Country" id="Country">
+            <option required value="" selected="selected">Select Country</option>
+          </select>
+          <br>
+
+          <label for="State" style="color:white; padding-left: 5px;"><strong>STATE </strong></label>
+          <select name="State" id="State">
+            <option required value="" selected="selected">Please select Country first</option>
+          </select>
+          <br>
+
+          <label for="Cities" style="color:white; padding-left: 5px;"><strong>CITIES </strong></label>
+          <select name="Cities" id="Cities">
+            <option required value="" selected="selected">Please select State first</option>
+          </select>
+          <br>
+
+          <label for="pax" style="color:white; padding-left: 5px;"><strong>PAX </strong></label>
+          <input required type="number" id="pax" name="paxx" min="1" max="5">
+          <br>
+          <label for="birthday" style="color:white; padding-left: 5px;"><strong>DATE </strong></label>
+          <input required type="date" id="birthday" name="birthday">
+        </div>
+        <div class="fl-right">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509862.8295354708!2d101.36056656419397!3d3.27473539887823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4135c818aa17%3A0xea7ab3b0099a86ac!2sGombak%20District%2C%20Selangor!5e0!3m2!1sen!2smy!4v1609074920683!5m2!1sen!2smy"
+              width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="location-selected">
+            <p id="city-chose"></p>
+            <p id="state-chose"></p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="tourguide">
+      <div class="section-title">
+        <ul>
+          <li>
+            <p style="font-weight: bold;">TOUR GUIDE</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tourguide-box">
+        <div class="tour-left" style="overflow-y: scroll; height:420px;">
+          <p style="padding-left: 15px; ">SELECT TOUR GUIDE</p>
+          <div class="tour-box">
+            <div class="tour-details">
+              <img src="./img/abdul.jpg" alt="abdul_rauf">
+              <h3>ABDUL MISBUN</h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <p><em>My name is Abdul, i know hidden gem for foods. Malaysia is all about good foods :)</em></p>
+
+              <label class="select-radio">
+                <input type="radio" name="radio" value="ABDUL MISBUN">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="tour-details">
+              <img src="./img/jackma.jpg" alt="abdul_rauf">
+              <h3>LIM KOK WENG</h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <p><em>People often call me uncle Lim, I like to drive around and take people places.</em></p>
+
+              <label class="select-radio">
+                <input type="radio" name="radio" value="LIM KOK WENG">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="tour-details">
+              <img src="./img/tony.jpg" alt="abdul_rauf">
+              <h3>PRAVIN RAJ</h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <p><em>My name is Pravin, I'm part time DJ, I will offer you a good choices of songs to compliment your vacation.</em></p>
+
+              <label class="select-radio">
+                <input type="radio" name="radio" value="PRAVIN RAJ">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="tour-details">
+              <img src="./img/lando.jpg" alt="abdul_rauf">
+              <h3>LANDO NORRIS</h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <p><em>My name is Lando Norris, i'm fun and cheerful. people loves my jokes hehe xD</em></p>
+
+              <label class="select-radio">
+                <input type="radio" name="radio" value="LANDO NORRIS">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="tour-right">
+          <div class="select-random">
+            <p style="padding-left: 15px;"><strong>SELECT RANDOM TOUR GUIDE</strong></p>
+            <label class="select-radio">
+              <input type="radio" name="radio" value="RANDOM">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment">
+      <div class="section-title">
+        <ul>
+          <li>
+            <p style="font-weight: bold;">PAYMENT</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="payment-box">
+        <div class="fl-left">
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" aria-hidden="true"></i>
+            <i class="fa fa-cc-amex" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+          </div>
+          <label for="cname">NAME ON CARD</label>
+          <input required type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <label for="ccnum">CREDIT CARD NUMBER</label>
+          <input required type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444">
+          <label for="expmonth">EXP MONTH</label>
+          <input required type="text" id="expmonth" name="expmonth" placeholder="01-12">
+          <div class="exp-left" style="float:left;">
+            <label for="expyear">EXP YEAR</label>
+            <input required type="text" id="expyear" name="expyear" placeholder="2018">
+          </div>
+          <div class="exp-right" style="float:left;">
+            <label for="cvv">CVV     </label>
+            <label for="  cvv"></label>
+            <input required type="text" id="cvv" name="cvv" placeholder="352">
+          </div>
+
+
+
+        </div>
+
+        <div class="fl-right">
+          <button type="button" id="button1" name="button"><strong>BOOK</strong>
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+          </button>
+
+
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-head">
+                <div class="logo" id="logo2">
+                  <img src="./img/logo2.png" alt="travelbuddy" width="100px" height="100px">
+                  <h1 id="proname">TRAVELBUDDY</h1>
+
+                </div><br>
+              </div>
+              <div class="modal-body">
+                <br>
+                <hr>
+                <br>
+
+                <div class="find-location-box">
+                  <div class="fl-left">
+                    <br> <h3>--------------------YOUR DETAILS--------------------</h3> <br>
+                    <h3>Name: </h3>  <h5 id="name-text"></h5><br>
+                    <h3>Country: </h3>  <h5 id="country-text"></h5> <br>
+                    <h3>State: </h3> <h5 id="state-text"></h5><br>
+                    <h3>Cities: </h3> <h5 id="cities-text"></h5><br>
+                    <h3>Pax: </h3> <h5 id="pax-text"></h5><br>
+                    <h3>Date: </h3>  <h5 id="date-text"></h5><br>
+
+
+
+                  </div>
+                  <div class="fl-right">
+                    <h3>-------------BOOKING DETAILS-------------</h3> <br>
+                    <h3>Booking No: </h3> <h5 id="bookingno-text"></h5><br>
+                    <h3>Date: </h3>  <h5 id="datebook-text"></h5><br>
+
+                    <br><h3>------------TOUR GUIDE DETAILS-----------</h3> <br>
+                    <h3>Tour guide: </h3> <h5 id="tour-text"></h5> <br> <br>
+
+                  </div>
+
+                </div>
+
+
+
+
+
+                <button type="button" id="button2" name="button" onclick="location.href='https://meran0.github.io/TravelBuddy/';"><strong>GO TO HOMEPAGE</strong>
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <script src="javascript.js"></script>
+
+
+</body>
+<footer>
+  <div class="footer">
+    <ul>
+      <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <p>Copyright ©️2020 TravelBuddy</p>
+</footer>
+
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="./img/logo.jpg">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  </head>
+  <body>
+    <header>
+      <div class="tab">
+      <nav>
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <li style="margin-right: 30px;"><a href="/">Homepage</a></li>
+      </nav>
+      </div>
+
+        <div class="nav_bar">
+          <ul>
+            <li><a href="../Registration/registration.html" id="onlink">Registration</a></li>
+            <li><a href="../Event/eventpage.html">Event</a></li>
+            <li><a href="../Booking/Booking.html">Booking</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+          </ul>
+        </div>
+          </header>
+
+      <div class="content">
+        <div class="title">
+          <div class="logo">
+            <img src="logo2.png" alt="travelbuddy" width="100px" height="100px">
+            <h1 id="proname">TRAVELBUDDY</h1>
+              </div>
+              <br>
+            <p id="reg">R E G I S T R A T I O N</p>
+            <br><br><br><br><br>
+              </div>
+        <div class="description">
+        <ul>
+          <li>- Strong data privacy.</li>
+          <li>- Enjoy the discount and promotion.</li>
+          <li>- Get every update from us by email.</li>
+        </ul>
+        </div>
+    <form class="form" action="connect.php" method="post">
+      <div class="container">
+        <div class="container-box">
+            <br>
+            <div class="line">
+            <h3>Sign Up for Free Now!</h3>
+            <br>
+            <p>Already have an account?<a href="../Login/login.html"> Login here!</a></p>
+            </div>
+
+            <div class="fl-left">
+
+            <label for="fn" style="color:white; padding-left: 5px;"><strong>First Name</strong></label>
+            <br>
+            <input type="text"  id="fn" name="firstname" required>
+            <br>
+            <label for="ln" style="color:white; padding-left: 5px;"><strong>Last Name</strong></label>
+            <br>
+            <input type="text" id="ln" name="laststname" required>
+            <br>
+            <label for="an" style="color:white; padding-left: 5px;"><strong>Account Name (show on receipt)</strong></label>
+            <br>
+            <input type="text" id="an" name="accountname" required>
+            <br>
+            <label for="phone" style="color:white; padding-left: 5px;"><strong>Phone Number</strong></label>
+            <br>
+            <input type="number" id="phone" name="phonenumber" required>
+            <br>
+            <label for="email" style="color:white; padding-left: 5px;"><strong>Email Address</strong></label>
+            <br>
+            <input type="text" id="email" name="emailaddress" required>
+            <br>
+            <label for="pw" style="color:white; padding-left: 5px;"><strong>Password</strong></label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="cpw" style="color:white; padding-left: 5px;"><strong>Confirm Password</strong></label>
+            <br>
+            <input type="password" id="confirm_password" name="confirmpassword" required>
+            <span id = "message" style="color:red"></span>
+            <br>
+
+            <div class="button">
+              <input class="submit" type="submit" value="Sign Up">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <button onclick="topFunction()" id="TopMenu" title="Go to top"><i class="fas fa-arrow-up"></i> Top</button>
+
+<script type="text/javascript">
+  var password = document.getElementById("password");
+  var  confirm_password = document.getElementById("confirm_password");
+
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+
+  var mybutton = document.getElementById("TopMenu");
+
+  window.onscroll = function() {
+    scrollFunction()
+  }
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+  </body>
+
+  <footer>
+  <div class="footer">
+    <ul>
+      <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <p>Copyright ©️2020 TravelBuddy</p>
+</footer>
+
+</html>

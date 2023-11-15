@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMate</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <video src="kl-city.mp4"  autoplay muted loop>
+
+      </video>
+
+      <!---Top Right Navigation--->
+      <div class="top-nav">
+        <nav>
+          <i class="fas fa-user-edit" aria-hidden="true"></i>
+          <li style="margin-right: 50px;"><a href="./Registration/registration.html">Register</a></li>
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <li style="margin-right: 50px;"><a href="./Login/login.html">Login</a></li>
+        </nav>
+      </div>
+
+      <!---SearchBox--->
+      <div class="search">
+        <label for="searching" style="color:white; padding-left: 10px;"></label>
+          <input type="text" class="input" placeholder="Search">
+          <div class="searchBtn">
+           <i class="fas fa-search"></i>
+        </div>
+      </div>
+
+      <!---Side Navigation--->
+      <div id="mySidebar" class="sidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="active" href="index.html">Homepage</a></li>
+          <li><a href="./Event/eventpage.html">Event</a></li>
+          <li><a href="./Booking/Booking.html">Booking</a></li>
+          <li><a href="./Contact/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="sideBtn">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+        </span>
+      </div>
+
+      <div class="title">
+
+        <div class="logo">
+          <img src="logo.png" alt="travelMate" width="200px" height="200px">
+
+          <!--Overlay for About Us -->
+          <div id="overlay" onclick="off()">
+            <div id="text">
+              <h3>About Us</h3><br><hr><br>
+              TravelMate website system are revolving around <br>
+              tourism conceptualization that focuses on the <br>
+              topic of the tourist guide system as the focal point. <br><br>
+
+              Our website is focusing on booking system<br>
+              for the tourist guide based on the packages<br>
+              and location provided by the customer. <br><br>
+
+             Our website also provides the most viewed <br>
+             location and also previous reviews from our past user so <br>
+             they have trouble-free moments to infer their decision. <br>
+           </div>
+         </div>
+         <h1 onclick="on()" id="proname">TRAVEL<br/><br>Mate</h1>
+        </div><br>
+      </div>
+
+      <!---Description of the Website--->
+      <div class="description">
+      <p>The best job advantage we can get as a team of travelers is the ability
+        to continue traveling the globe and interacting along the way with others —
+        and we do! <br><br>The focal points of all our adventures are to enhance your journey
+        with authentic experiences, genuine cultural exchange and meaningful exploration.
+        <br><br>Get the best deals with <i><u>TravelMate</u></i> now!</p>
+        <br>
+        <div class="to-topplace">
+          <a href="#topplace"> <i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i> </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!---Top Visited Place--->
+    <div class="topplace" id="topplace" >
+      <h3>Top Visited Place in Malaysia</h3>
+    </div>
+    <div class="placeimg">
+      <div class="fotorama" data-width="1000" data-height="500" data-autoplay="3000" data-stopautoplayontouch="false">
+        <img src="./img/img_kl.jpg" alt="Kuala Lumpur" data-caption="Kuala Lumpur">
+        <img src="./img/img_cameronhighlands.jpg" alt="Cameron Highlands" data-caption="Cameron Highlands">
+        <img src="./img/img_kinabalu.jpg" alt="Kota Kinabalu" data-caption="Kota Kinabalu">
+        <img src="./img/img_kuching.jpg" alt="Kuching" data-caption="Kuching">
+        <img src="./img/img_langkawi.jpg" alt="Langkawi" data-caption="Langkawi">
+        <img src="./img/img_malacca.jpg" alt="Malacca" data-caption="Malacca">
+        <img src="./img/img_penang.jpg" alt="Penang" data-caption="Penang">
+        <img src="./img/img_portdickson.jpg" alt="Port Dickson" data-caption="Port Dickson">
+        <img src="./img/img_tiomanisland.jpg" alt="Tioman Island" data-caption="Tioman Island">
+        <img src="./img/img_kualaterengganu.jpg" alt="Kuala Terengganu" data-caption="Kuala Terengganu">
+      </div>
+    </div>
+    
+    <!--Past Reviews-->
+    <div class="past-reviews">
+      <h3>Past Reviews from Our Travelers</h3>
+      <div class="content">
+        <div class="review-s">
+        <p id="review">"I will keep on recommending Travel Buddy to my friends."
+          <br/>- Sally from Ipoh</p>
+          </div>
+          <div class="gen">
+          <button onclick="genReview()">Review</button>
+          </div>
+      </div>
+    </div>
+
+  <!---Package-->
+  <div class="allign">
+      <div class="available">
+        <h3>Packages for You</h3>
+      </div>
+    <div class="container">
+        <!--1------------------------>
+        <div class="box">
+          <p class="packages"></p>
+          <img src="./img/hiking.jpg" alt="Package A" class="package">
+          <div class="details">
+            <h2>Package A</h2>
+            <p>Do you love hiking that much? Want to experience something challenging and view beautiful scenery?
+              Come and join <strong>Hike with Mike.</strong></p>
+            <button onclick="myFunction()">Choose</button>
+          </div>
+        </div>
+        <!--2------------------------>
+        <div class="box">
+          <p class="packages"></p>
+          <img src="./img/islandhopping.jpg" alt="Package B" class="package">
+          <div class="details">
+            <h2>Package B</h2>
+            <p>Exploring the islands will bring many unique experiences
+              that you have never encountered before. Book your holiday with our <strong>Island Hopping.</strong></p>
+            <button onclick="myFunction()">Choose</button>
+          </div>
+        </div>
+        <!--3------------------------>
+        <div class="box">
+          <p class="packages"></p>
+          <img src="./img/jungletrekking.jpg" alt="Package C" class="package">
+          <div class="details">
+            <h2>Package C</h2>
+            <p>Escape from the noise and din of the city life. Take in plenty of fresh air to relax
+              emotions and feelings. <strong>Discover The Nature</strong> is the answer.</p>
+            <button onclick="myFunction()">Choose</button>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="TopMenu" title="Go to top"><i class="fas fa-arrow-up"></i> Top</button>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️2020 TravelMate</p>
+      </div>
+    </footer>
+
+      <script src="homepage.js"></script>
+  </body>
+</html>
