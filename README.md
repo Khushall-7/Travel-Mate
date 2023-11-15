@@ -1,1 +1,1 @@
-During my second semester, I crafted a Travel Buddy web app for my senior. This platform showcases tourism packages and highlights the best places to visit globally, accompanied by a trainer feature. The project was developed using JavaScript, CSS, HTML, and PHP for enhanced functionality.
+During my second semester, I crafted a Travel Mate web app for my senior. This platform showcases tourism packages and highlights the best places to visit globally, accompanied by a trainer feature. The project was developed using JavaScript, CSS, HTML, and PHP for enhanced functionality.
